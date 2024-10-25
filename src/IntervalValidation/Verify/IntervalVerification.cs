@@ -1,20 +1,20 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "IntervalVerification.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 #region
-
 using ANX.Common.Validation.Api.Verify;
 using ANX.Common.Validation.Interval.Common;
 using ANX.Common.Validation.Interval.Exception;
-
 #endregion
 
 namespace ANX.Common.Validation.Interval.Verify;
 
-public sealed class IntervalVerification<T> : IReusableVerification<T> where T : IComparable<T> {
+public sealed class IntervalVerification<T> : IReusableVerification<T>
+    where T : IComparable<T>
+{
     private readonly ReusableVerification<T> _verification;
 
     private IntervalVerification(ReusableVerification<T> verification)

@@ -1,14 +1,17 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "ReusableTriAssertion.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
+#region
 using ANX.Common.Validation.Api.CustomInterface;
+#endregion
 
 namespace ANX.Common.Validation.Api.Assert;
 
-public sealed class ReusableTriAssertion<TFirst, TSecond, TThird> : IReusableTriAssertion<TFirst, TSecond, TThird> {
+public sealed class ReusableTriAssertion<TFirst, TSecond, TThird> : IReusableTriAssertion<TFirst, TSecond, TThird>
+{
     public ReusableTriAssertion(
         Func<TFirst, TSecond, TThird, bool> predicate,
         Func<TFirst, TSecond, TThird, Exception> exceptionSupplier)

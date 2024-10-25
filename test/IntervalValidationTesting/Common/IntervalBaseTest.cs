@@ -1,20 +1,19 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "IntervalBaseTest.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 #region
-
 using ANX.Common.Validation.Interval.Common;
 using ANX.Common.Validation.Interval.Exception;
 using Xunit;
-
 #endregion
 
 namespace ANX.Common.Validation.IntervalTesting.Common;
 
-public sealed class IntervalBaseTest {
+public sealed class IntervalBaseTest
+{
     private static readonly IntervalBase<uint> _intervalBase = new(2, 12);
 
     [Theory]

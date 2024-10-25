@@ -1,5 +1,5 @@
 // ------------------------------------------------------------------------------------------
-//  <copyright file = "ParallelBiAssertionTestData.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
+//  <copyright file = "ReusableParallelBiAssertionTestData.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
 //  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
 // ------------------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ public static class ParallelBiAssertionTestData
         var value = new int[10000];
         var random = new Random();
 
-        for(var i = 0; i < 10000-2; i++)
+        for(var i = 0; i < 10000 - 2; i++)
         {
             value[i] = random.Next();
         }

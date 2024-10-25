@@ -34,6 +34,7 @@ This directory includes the main classes `Assertion`, `ValidationAssertion`, `Re
 
 You can use an `Assertion` to prove a boolean expression and throwing a custom exception if the boolean expression is
 not met.
+
 ```
 Assertion.Assert(booleanExpression, () => new CustomException());
 ```

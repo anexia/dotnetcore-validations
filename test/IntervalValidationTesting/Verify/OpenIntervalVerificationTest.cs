@@ -1,21 +1,20 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "OpenIntervalVerificationTest.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 #region
-
 using ANX.Common.Validation.Interval.Exception;
 using ANX.Common.Validation.Interval.Open;
 using ANX.Common.Validation.Interval.Verify;
 using Xunit;
-
 #endregion
 
 namespace ANX.Common.Validation.IntervalTesting.Verify;
 
-public sealed class OpenIntervalVerificationTest {
+public sealed class OpenIntervalVerificationTest
+{
     private static readonly IntervalVerification<int> _verification = new(new OpenInterval<int>(-5, 5));
 
     [Theory]

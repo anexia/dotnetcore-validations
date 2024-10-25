@@ -1,18 +1,17 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "TestConfiguration.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 #region
-
 using ANX.Common.Validation.Interval.Verify;
-
 #endregion
 
 namespace ANX.Common.Validation.IntervalTesting.Verify.Data;
 
-public sealed class TestConfiguration {
+public sealed class TestConfiguration
+{
     private TestConfiguration(IntervalVerification<int> intervalVerification, int expectedValue)
     {
         ExpectedValue = expectedValue;

@@ -1,21 +1,20 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "ReusableBiAssertionTest.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 #region
-
 using System;
 using ANX.Common.Validation.Api.Assert;
 using ANX.Common.Validation.Api.CustomInterface;
 using Xunit;
-
 #endregion
 
 namespace ANX.Common.Validation.ApiTesting.Assert;
 
-public sealed class ReusableBiAssertionTest {
+public sealed class ReusableBiAssertionTest
+{
     private static readonly IReusableBiAssertion<int, int> _assertion = new ReusableBiAssertion<int, int>(
         (first, second) => first > 0 && second > 0,
         (first, second) =>

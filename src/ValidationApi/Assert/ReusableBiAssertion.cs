@@ -1,14 +1,17 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "ReusableBiAssertion.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
+#region
 using ANX.Common.Validation.Api.CustomInterface;
+#endregion
 
 namespace ANX.Common.Validation.Api.Assert;
 
-public sealed class ReusableBiAssertion<TFirst, TSecond> : IReusableBiAssertion<TFirst, TSecond> {
+public sealed class ReusableBiAssertion<TFirst, TSecond> : IReusableBiAssertion<TFirst, TSecond>
+{
     public ReusableBiAssertion(
         Func<TFirst, TSecond, bool> predicate,
         Func<TFirst, TSecond, Exception> exceptionSupplier)

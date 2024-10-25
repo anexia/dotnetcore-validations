@@ -1,11 +1,13 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "ParallelAssertion.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
+#region
 using System.Threading.Tasks.Dataflow;
 using ANX.Common.Validation.Api.CustomInterface;
+#endregion
 
 namespace ANX.Common.Validation.Api.Assert.Parallel;
 
@@ -41,6 +43,7 @@ public sealed class ParallelAssertion<T> : IAsyncReusableAssertion<T>
         for(var i = 0; i < counter; i++)
         {
             var (value, valid) = await validationTransformBlock.ReceiveAsync();
+
             if(!valid) throw _exceptionSupplier.Invoke(value);
         }
     }

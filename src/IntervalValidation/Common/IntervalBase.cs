@@ -1,20 +1,20 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "IntervalBase.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 #region
-
 using ANX.Common.Validation.Api.Assert;
 using ANX.Common.Validation.Interval.Exception;
 using Equ;
-
 #endregion
 
 namespace ANX.Common.Validation.Interval.Common;
 
-public sealed class IntervalBase<T> : MemberwiseEquatable<IntervalBase<T>> where T : IComparable<T> {
+public sealed class IntervalBase<T> : MemberwiseEquatable<IntervalBase<T>>
+    where T : IComparable<T>
+{
     private static readonly ReusableBiAssertion<T, T> _validIntervalAssertion = new(
         (lower, upper) => lower.CompareTo(upper) <= 0,
         (lower, upper) => new IllegalIntervalException(lower, upper));
@@ -50,9 +50,9 @@ public sealed class IntervalBase<T> : MemberwiseEquatable<IntervalBase<T>> where
 
     public bool UpperBoundEqualTo(T value) => _upperBound.CompareTo(value) == 0;
 
-    public override string ToString() => $"{_lowerBound},{_upperBound}";
-
     public static bool operator ==(IntervalBase<T> left, IntervalBase<T> right) => Equals(left, right);
 
     public static bool operator !=(IntervalBase<T> left, IntervalBase<T> right) => !Equals(left, right);
+
+    public override string ToString() => $"{_lowerBound},{_upperBound}";
 }

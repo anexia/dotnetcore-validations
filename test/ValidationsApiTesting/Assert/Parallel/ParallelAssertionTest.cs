@@ -1,8 +1,8 @@
-// --------------------------------------------------------------------------------------------
-//  <copyright file = "ParallelAssertion.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+// ------------------------------------------------------------------------------------------
+//  <copyright file = "ParallelAssertionTest.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 #region
 using System;
@@ -21,9 +21,7 @@ public sealed class ParallelAssertionTest
         i => new AggregateException($"Not dividable by 2: \"{i}\""));
 
     [Theory]
-    [MemberData(
-        nameof(ParallelAssertionTestData.GetErraticTestList),
-        MemberType = typeof(ParallelAssertionTestData))]
+    [MemberData(nameof(ParallelAssertionTestData.GetErraticTestList), MemberType = typeof(ParallelAssertionTestData))]
     public async Task ThrowsException(int[] integerList)
     {
         await Xunit.Assert.ThrowsAsync<AggregateException>(async () => await _assertion.AssertAsync(integerList));

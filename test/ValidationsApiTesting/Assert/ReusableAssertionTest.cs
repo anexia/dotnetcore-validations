@@ -1,20 +1,19 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "ReusableAssertionTest.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 #region
-
 using System;
 using ANX.Common.Validation.Api.Assert;
 using Xunit;
-
 #endregion
 
 namespace ANX.Common.Validation.ApiTesting.Assert;
 
-public sealed class ReusableAssertionTest {
+public sealed class ReusableAssertionTest
+{
     private static readonly ReusableAssertion<int> _assertion = new(
         value => value > 0,
         value => throw new ArgumentException($"Value {value} must be greater than 0."));

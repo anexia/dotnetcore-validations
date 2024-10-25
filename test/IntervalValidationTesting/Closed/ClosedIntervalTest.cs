@@ -1,20 +1,19 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "ClosedIntervalTest.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 #region
-
 using ANX.Common.Validation.Interval.Closed;
 using Xunit;
 using static Xunit.Assert;
-
 #endregion
 
 namespace ANX.Common.Validation.IntervalTesting.Closed;
 
-public sealed class ClosedIntervalTest {
+public sealed class ClosedIntervalTest
+{
     private static readonly ClosedInterval<int> _interval = new(-5, 5);
 
     [Theory]

@@ -1,20 +1,19 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "LeftClosedRightOpenIntervalTest.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 #region
-
 using ANX.Common.Validation.Interval.Closed;
 using Xunit;
 using static Xunit.Assert;
-
 #endregion
 
 namespace ANX.Common.Validation.IntervalTesting.Closed;
 
-public sealed class LeftClosedRightOpenIntervalTest {
+public sealed class LeftClosedRightOpenIntervalTest
+{
     private static readonly LeftClosedRightOpenInterval<int> _interval = new(-5, 5);
 
     [Theory]

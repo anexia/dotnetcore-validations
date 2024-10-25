@@ -1,12 +1,14 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "ParallelContinuousBiAssertion.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
+#region
 using System.Threading.Tasks.Dataflow;
 using ANX.Common.Validation.Api.CustomInterface;
 using ANX.Common.Validation.Api.Extension;
+#endregion
 
 namespace ANX.Common.Validation.Api.Assert.Parallel;
 

@@ -1,19 +1,18 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "ExceptionTestConfiguration.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 #region
-
 using System;
 using ANX.Common.Validation.Interval.Exception;
-
 #endregion
 
 namespace ANX.Common.Validation.IntervalTesting.Verify.Data;
 
-public sealed class ExceptionTestConfiguration {
+public sealed class ExceptionTestConfiguration
+{
     private ExceptionTestConfiguration(
         Func<object> exceptionSupplier,
         string expectedExceptionMessage,

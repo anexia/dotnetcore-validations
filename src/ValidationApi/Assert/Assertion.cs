@@ -1,14 +1,17 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "Assertion.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
+#region
 using ANX.Common.Validation.Api.CustomInterface;
+#endregion
 
 namespace ANX.Common.Validation.Api.Assert;
 
-public sealed class Assertion : IAssertion {
+public sealed class Assertion : IAssertion
+{
     private readonly Func<bool> _booleanSupplier;
     private readonly Func<Exception> _exceptionSupplier;
 

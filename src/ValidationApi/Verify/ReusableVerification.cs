@@ -1,19 +1,18 @@
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //  <copyright file = "ReusableVerification.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
-//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
+//  Copyright (c) ANEXIA® Internetdienstleistungs GmbH. All rights reserved.
 //  </copyright>
-// --------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 #region
-
 using ANX.Common.Validation.Api.Assert;
 using ANX.Common.Validation.Api.CustomInterface;
-
 #endregion
 
 namespace ANX.Common.Validation.Api.Verify;
 
-public sealed class ReusableVerification<T> : IReusableVerification<T> {
+public sealed class ReusableVerification<T> : IReusableVerification<T>
+{
     private readonly IReusableAssertion<T> _assertion;
 
     public ReusableVerification(IReusableAssertion<T> assertion)
