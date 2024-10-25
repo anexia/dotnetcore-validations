@@ -4,19 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
-
-## [x.y.z] - YYYY-MM-DD
+## [1.0.1] - 2024-12-25
 
 ### Added
-- Lorem ipsum dolor sit amet
-
-### Deprecated
-- Nothing.
-
-### Removed
-- Nothing.
-
-### Fixed
-- Nothing.
+- Parallel assertion implemented
+- Parallel bi assertion for continuous pair iteration
 

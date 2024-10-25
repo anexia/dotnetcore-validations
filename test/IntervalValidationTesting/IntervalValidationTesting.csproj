@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Anexia.Validation.IntervalTesting</AssemblyName>
+        <RootNamespace>Anexia.Validation.IntervalTesting</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\IntervalValidation\IntervalValidation.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Equ" Version="2.3.0"/>
+    </ItemGroup>
+
+</Project>

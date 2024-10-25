@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>Anexia.Validation.Api</AssemblyName>
+        <RootNamespace>Anexia.Validation.Api</RootNamespace>
+    </PropertyGroup>
+
+</Project>

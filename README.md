@@ -9,19 +9,23 @@ ensure, that only values within a certain range or interval are given to a class
 hold values between 0 and 100. In this case, you can use one of the predefined assertions, verifications or validations
 to simply throw an exception if a value < 0 or > 100 is passed to the constructor.
 
-## ANX.Common.Validation.Api
+## Installation
+
+- Install the latest version of the `Anexia.Validations` via nuget
+
+## Anexia.Validation.Api
 
 This library contains interfaces and classes for ensuring that certain conditions are fullfilled and throwing an
 exception otherwise. Typically, these interfaces and classes are used in a constructor to ensure that only valid values
 or data structures are used. You can also use them to validate a calculation result or etc.
 
-### ANX.Common.Validation.Api.Validate
+### Anexia.Validation.Api.Validate
 
 You can define a class of type `IValidation`, `IReusableValidation<T>`, `IReusableBiValidation<TFirst,TSecond>`
 , `IReusableTriValidation<TFirst,TSecond,TThird` and use this validation with up to three input parameters in
 an `ValidationAssertion` (see below).
 
-### ANX.Common.Validation.Api.Assert
+### Anexia.Validation.Api.Assert
 
 This directory includes the main classes `Assertion`, `ValidationAssertion`, `ReusableAssertion<T>`
 , `ReusableBiAssertion<TFirst, TSecond>` and `ReusableTriAssertion<TFirst, TSecond, TThird>`.
@@ -30,6 +34,7 @@ This directory includes the main classes `Assertion`, `ValidationAssertion`, `Re
 
 You can use an `Assertion` to prove a boolean expression and throwing a custom exception if the boolean expression is
 not met.
+
 ```
 Assertion.Assert(booleanExpression, () => new CustomException());
 ```
@@ -77,7 +82,7 @@ boolean expression:
         (start, sequence) => new CirculationStartAndFirstTaskNotAlignedException(start, sequence.FirstOrDefault()));
 ```
 
-### ANX.Common.Validation.Api.Verify
+### Anexia.Validation.Api.Verify
 
 This directory contains a `ReusableVerification<T>`class which can be used to verify a given `IReusableAssertion<T>`and
 returning `T`, when the binary expression of assertion is true. Use this in an constructor, if you want to verify a
@@ -98,7 +103,7 @@ value and assign it to a property:
     public int Value { get; }
 ```
 
-## ANX.Common.Validation.Interval
+## Anexia.Validation.Interval
 
 This library contains classes and interfaces for ensuring that only values within a certain interval are passed to an
 object constructor. The `IntervalVerification` can be used for any value of type `IComparable`.
@@ -119,8 +124,8 @@ must be >-180 and < 180. We can ensure, that objects of type `Latitude` and `Lon
 implementing an `IntervalVerification` in their constructors:
 
 ```
-using ANX.Common.Validation.Interval.Verify
-using ANX.Common.Validation.Interval.Common
+using Anexia.Validation.Interval.Verify
+using Anexia.Validation.Interval.Common
 
 public sealed class Latitude : MemberwiseEquatable<Latitude>
     {
@@ -141,8 +146,8 @@ public sealed class Latitude : MemberwiseEquatable<Latitude>
 ```
 
 ```
-using ANX.Common.Validation.Interval.Verify
-using ANX.Common.Validation.Interval.Common
+using Anexia.Validation.Interval.Verify
+using Anexia.Validation.Interval.Common
 
  public sealed class Longitude : MemberwiseEquatable<Longitude>
     {

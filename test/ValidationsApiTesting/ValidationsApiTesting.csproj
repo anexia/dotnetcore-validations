@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Anexia.Validation.ApiTesting</AssemblyName>
+        <RootNamespace>Anexia.Validation.ApiTesting</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\ValidationApi\ValidationApi.csproj"/>
+    </ItemGroup>
+
+</Project>

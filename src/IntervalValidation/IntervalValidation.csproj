@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>Anexia.Validation.Interval</AssemblyName>
+        <RootNamespace>Anexia.Validation.Interval</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ValidationApi\ValidationApi.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Equ" Version="2.3.0"/>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+variables:
+    DOCKER_IMAGE: "mcr.microsoft.com/dotnet/sdk:8.0"
+    PUBLISHINTE: "true"
+    PUBLISHSTAG: "true"
+    GIT_VERSION: 5.9.0
+    PUSH_TO_AZURE: "true"
