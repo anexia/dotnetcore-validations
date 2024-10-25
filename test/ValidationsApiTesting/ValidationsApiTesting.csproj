@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>ANX.Common.Validation.ApiTesting</AssemblyName>
+        <RootNamespace>ANX.Common.Validation.ApiTesting</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\ValidationApi\ValidationApi.csproj"/>
+    </ItemGroup>
+
+</Project>

@@ -9,6 +9,10 @@ ensure, that only values within a certain range or interval are given to a class
 hold values between 0 and 100. In this case, you can use one of the predefined assertions, verifications or validations
 to simply throw an exception if a value < 0 or > 100 is passed to the constructor.
 
+## Installation
+
+- Install latest package of `Anexia.Validations` via nuget
+
 ## ANX.Common.Validation.Api
 
 This library contains interfaces and classes for ensuring that certain conditions are fullfilled and throwing an

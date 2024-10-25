@@ -1,0 +1,11 @@
+variables:
+    DOCKER_IMAGE: "mcr.microsoft.com/dotnet/sdk:6.0"
+    PUBLISHINTE: "true"
+    PUBLISHSTAG: "true"
+    GIT_VERSION: 5.9.0
+    PUSH_TO_AZURE: "true"
+
+include:
+    -   project: si/anexia-common/dotnet/dotnet-ci-template
+        ref: main
+        file: dotnet-gitlab-ci.yml
