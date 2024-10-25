@@ -8,6 +8,7 @@
 
 using System;
 using ANX.Common.Validation.Api.Assert;
+using ANX.Common.Validation.Api.CustomInterface;
 using Xunit;
 
 #endregion

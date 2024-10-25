@@ -6,6 +6,7 @@
 
 #region
 
+using ANX.Common.Validation.Api.CustomInterface;
 using ANX.Common.Validation.Api.Validate;
 
 #endregion

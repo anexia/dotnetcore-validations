@@ -4,6 +4,8 @@
 //  </copyright>
 // --------------------------------------------------------------------------------------------
 
+using ANX.Common.Validation.Api.CustomInterface;
+
 namespace ANX.Common.Validation.Api.Assert;
 
 public sealed class Assertion : IAssertion {

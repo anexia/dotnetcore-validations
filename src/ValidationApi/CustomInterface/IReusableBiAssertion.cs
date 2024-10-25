@@ -1,11 +1,11 @@
 // --------------------------------------------------------------------------------------------
-//  <copyright file = "IReusableTriAssertion.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
+//  <copyright file = "IReusableBiAssertion.cs" company = "ANEXIA® Internetdienstleistungs GmbH">
 //  Copyright (c) ANEXIA® Internetdienstleistungs GmbH.All rights reserved.
 //  </copyright>
 // --------------------------------------------------------------------------------------------
 
-namespace ANX.Common.Validation.Api.Assert;
+namespace ANX.Common.Validation.Api.CustomInterface;
 
-public interface IReusableTriAssertion<in TFirst, in TSecond, in TThird> {
-    void Assert(TFirst first, TSecond second, TThird third);
+public interface IReusableBiAssertion<in TFirst, in TSecond> {
+    void Assert(TFirst first, TSecond second);
 }
