@@ -4,7 +4,7 @@
 //  </copyright>
 // ------------------------------------------------------------------------------------------
 
-namespace ANX.Common.Validation.Api.CustomInterface;
+namespace Anexia.Validation.Api.CustomInterface;
 
 public interface IReusableBiAssertion<in TFirst, in TSecond>
 {

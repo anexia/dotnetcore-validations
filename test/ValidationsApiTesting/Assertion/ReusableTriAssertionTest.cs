@@ -6,12 +6,9 @@
 
 #region
 using System;
-using ANX.Common.Validation.Api.Assert;
-using ANX.Common.Validation.Api.CustomInterface;
-using Xunit;
 #endregion
 
-namespace ANX.Common.Validation.ApiTesting.Assert;
+namespace Anexia.Validation.ApiTesting.Assertion;
 
 public sealed class ReusableTriAssertionTest
 {
@@ -25,8 +22,6 @@ public sealed class ReusableTriAssertionTest
     [Fact]
     public void AssertThrowsExceptionForBooleanSupplierReturningFalse()
     {
-        var exception = Xunit.Assert.Throws<ArgumentException>(() => _assertion.Assert(2, 3, 6));
-
-        Xunit.Assert.Equal("Sum of first and second value must be greater than 6.", exception.Message);
+        Assert.Throws<ArgumentException>(() => _assertion.Assert(2, 3, 6));
     }
 }

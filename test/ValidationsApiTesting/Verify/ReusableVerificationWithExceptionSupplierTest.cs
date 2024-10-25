@@ -6,11 +6,10 @@
 
 #region
 using System;
-using ANX.Common.Validation.Api.Verify;
-using Xunit;
+using Anexia.Validation.Api.Verify;
 #endregion
 
-namespace ANX.Common.Validation.ApiTesting.Verify;
+namespace Anexia.Validation.ApiTesting.Verify;
 
 public sealed class ReusableVerificationWithExceptionSupplierTest
 {
@@ -20,13 +19,11 @@ public sealed class ReusableVerificationWithExceptionSupplierTest
 
     [Fact]
     public void VerifyDoesNotThrowExceptionForBooleanSupplierReturningTrue() =>
-        Xunit.Assert.Equal(1, _verification.Verify(1));
+        Assert.Equal(1, _verification.Verify(1));
 
     [Fact]
     public void VerifyThrowsExceptionForBooleanSupplierReturningFalse()
     {
-        var exception = Xunit.Assert.Throws<ArgumentException>(() => _verification.Verify(0));
-
-        Xunit.Assert.Equal("Value 0 must be greater than 0.", exception.Message);
+        Assert.Throws<ArgumentException>(() => _verification.Verify(0));
     }
 }

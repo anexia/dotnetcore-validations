@@ -5,11 +5,11 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Api.CustomInterface;
-using ANX.Common.Validation.Api.Validate;
+using Anexia.Validation.Api.CustomInterface;
+using Anexia.Validation.Api.Validate;
 #endregion
 
-namespace ANX.Common.Validation.Api.Assert;
+namespace Anexia.Validation.Api.Assert;
 
 public sealed class ReusableTriValidationAssertion<TFirst, TSecond, TThird>
     : IReusableTriAssertion<TFirst, TSecond, TThird>

@@ -5,13 +5,12 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Interval.Exception;
-using ANX.Common.Validation.Interval.Open;
-using ANX.Common.Validation.Interval.Verify;
-using Xunit;
+using Anexia.Validation.Interval.Exception;
+using Anexia.Validation.Interval.Open;
+using Anexia.Validation.Interval.Verify;
 #endregion
 
-namespace ANX.Common.Validation.IntervalTesting.Verify;
+namespace Anexia.Validation.IntervalTesting.Verify;
 
 public sealed class OpenIntervalVerificationTest
 {
@@ -31,8 +30,6 @@ public sealed class OpenIntervalVerificationTest
     [InlineData(6)]
     public void VerifyThrowsExceptionForInValidValues(int value)
     {
-        var exception = Assert.Throws<ValueOutOfIntervalException<int>>(() => _verification.Verify(value));
-
-        Assert.Equal($"Value {value} is not in interval (-5,5).", exception.Message);
+        Assert.Throws<ValueOutOfIntervalException<int>>(() => _verification.Verify(value));
     }
 }

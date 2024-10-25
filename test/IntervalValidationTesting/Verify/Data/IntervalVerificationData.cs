@@ -7,13 +7,13 @@
 #region
 using System.Collections;
 using System.Collections.Generic;
-using ANX.Common.Validation.Interval.Common;
+using Anexia.Validation.Interval.Common;
 using Equ;
-using static ANX.Common.Validation.Interval.Common.IntervalFactory;
-using static ANX.Common.Validation.IntervalTesting.Verify.Data.TestConfiguration;
+using static Anexia.Validation.Interval.Common.IntervalFactory;
+using static Anexia.Validation.IntervalTesting.Verify.Data.TestConfiguration;
 #endregion
 
-namespace ANX.Common.Validation.IntervalTesting.Verify.Data;
+namespace Anexia.Validation.IntervalTesting.Verify.Data;
 
 public sealed class IntervalVerificationData : MemberwiseEquatable<IntervalVerificationData>, IEnumerable<object[]>
 {

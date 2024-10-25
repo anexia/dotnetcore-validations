@@ -6,10 +6,10 @@
 
 #region
 using System.Threading.Tasks.Dataflow;
-using ANX.Common.Validation.Api.CustomInterface;
+using Anexia.Validation.Api.CustomInterface;
 #endregion
 
-namespace ANX.Common.Validation.Api.Assert.Parallel;
+namespace Anexia.Validation.Api.Assert.Parallel;
 
 public sealed class ParallelAssertion<T> : IAsyncReusableAssertion<T>
 {

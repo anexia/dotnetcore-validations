@@ -7,12 +7,10 @@
 #region
 using System;
 using System.Diagnostics.CodeAnalysis;
-using ANX.Common.Validation.Api.Assert;
-using Xunit;
 using static Xunit.Assert;
 #endregion
 
-namespace ANX.Common.Validation.ApiTesting.Assert;
+namespace Anexia.Validation.ApiTesting.Assertion;
 
 [SuppressMessage(
     "Ignore, as for internal testing only",
@@ -21,9 +19,9 @@ public sealed class AssertionTest
 {
     [Fact]
     public void StaticAssertDoesNotThrowExceptionForBooleanSupplierReturningTrue() =>
-        Assertion.Assert(() => true, () => throw new ArgumentException());
+        Api.Assert.Assertion.Assert(() => true, () => throw new ArgumentException());
 
     [Fact]
     public void StaticAssertThrowsExceptionForBooleanSupplierReturningFalse() =>
-        Throws<ArgumentException>(() => Assertion.Assert(() => false, () => throw new ArgumentException()));
+        Throws<ArgumentException>(() => Api.Assert.Assertion.Assert(() => false, () => throw new ArgumentException()));
 }

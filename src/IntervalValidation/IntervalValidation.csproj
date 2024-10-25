@@ -3,8 +3,8 @@
     <PropertyGroup>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <AssemblyName>ANX.Common.Validation.Interval</AssemblyName>
-        <RootNamespace>ANX.Common.Validation.Interval</RootNamespace>
+        <AssemblyName>Anexia.Validation.Interval</AssemblyName>
+        <RootNamespace>Anexia.Validation.Interval</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

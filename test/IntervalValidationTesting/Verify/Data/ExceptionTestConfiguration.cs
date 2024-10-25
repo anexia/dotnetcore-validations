@@ -6,25 +6,25 @@
 
 #region
 using System;
-using ANX.Common.Validation.Interval.Exception;
+using Anexia.Validation.Interval.Exception;
 #endregion
 
-namespace ANX.Common.Validation.IntervalTesting.Verify.Data;
+namespace Anexia.Validation.IntervalTesting.Verify.Data;
 
 public sealed class ExceptionTestConfiguration
 {
+    private readonly string _expectedExceptionMessage;
     private ExceptionTestConfiguration(
         Func<object> exceptionSupplier,
         string expectedExceptionMessage,
         Type? exceptionType = null)
     {
         ExceptionSupplier = exceptionSupplier;
-        ExpectedExceptionMessage = expectedExceptionMessage;
+        _expectedExceptionMessage = expectedExceptionMessage;
         ExceptionType = exceptionType ?? typeof(ValueOutOfIntervalException<int>);
     }
 
     public Func<object> ExceptionSupplier { get; }
-    public string ExpectedExceptionMessage { get; }
     public Type ExceptionType { get; }
 
     public static ExceptionTestConfiguration Create(
@@ -33,5 +33,5 @@ public sealed class ExceptionTestConfiguration
         Type? exceptionType = null) =>
         new(exceptionSupplier, message, exceptionType);
 
-    public override string ToString() => ExpectedExceptionMessage;
+    public override string ToString() => _expectedExceptionMessage;
 }

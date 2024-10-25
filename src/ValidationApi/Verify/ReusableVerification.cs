@@ -5,11 +5,11 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Api.Assert;
-using ANX.Common.Validation.Api.CustomInterface;
+using Anexia.Validation.Api.Assert;
+using Anexia.Validation.Api.CustomInterface;
 #endregion
 
-namespace ANX.Common.Validation.Api.Verify;
+namespace Anexia.Validation.Api.Verify;
 
 public sealed class ReusableVerification<T> : IReusableVerification<T>
 {

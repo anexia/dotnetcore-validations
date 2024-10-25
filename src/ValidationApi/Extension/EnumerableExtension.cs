@@ -4,7 +4,7 @@
 //  </copyright>
 // ------------------------------------------------------------------------------------------
 
-namespace ANX.Common.Validation.Api.Extension;
+namespace Anexia.Validation.Api.Extension;
 
 public static class EnumerableExtension
 {

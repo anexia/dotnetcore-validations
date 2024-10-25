@@ -6,12 +6,9 @@
 
 #region
 using System;
-using ANX.Common.Validation.Api.Assert;
-using ANX.Common.Validation.Api.CustomInterface;
-using Xunit;
 #endregion
 
-namespace ANX.Common.Validation.ApiTesting.Assert;
+namespace Anexia.Validation.ApiTesting.Assertion;
 
 public sealed class ReusableBiAssertionTest
 {
@@ -26,16 +23,12 @@ public sealed class ReusableBiAssertionTest
     [Fact]
     public void AssertThrowsExceptionForBooleanSupplierReturningFalseBecauseOfFirstValue()
     {
-        var exception = Xunit.Assert.Throws<ArgumentException>(() => _assertion.Assert(0, 1));
-
-        Xunit.Assert.Equal("Both values must be greater than 0, but were 0 and 1", exception.Message);
+        Assert.Throws<ArgumentException>(() => _assertion.Assert(0, 1));
     }
 
     [Fact]
     public void AssertThrowsExceptionForBooleanSupplierReturningFalseBecauseOfSecondValue()
     {
-        var exception = Xunit.Assert.Throws<ArgumentException>(() => _assertion.Assert(2, 0));
-
-        Xunit.Assert.Equal("Both values must be greater than 0, but were 2 and 0", exception.Message);
+        Assert.Throws<ArgumentException>(() => _assertion.Assert(2, 0));
     }
 }

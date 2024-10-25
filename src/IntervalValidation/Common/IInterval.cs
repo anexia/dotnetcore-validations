@@ -4,7 +4,7 @@
 //  </copyright>
 // ------------------------------------------------------------------------------------------
 
-namespace ANX.Common.Validation.Interval.Common;
+namespace Anexia.Validation.Interval.Common;
 
 public interface IInterval<in T>
 {

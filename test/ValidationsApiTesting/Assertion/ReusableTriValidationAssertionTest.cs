@@ -6,13 +6,10 @@
 
 #region
 using System;
-using ANX.Common.Validation.Api.Assert;
-using ANX.Common.Validation.Api.Validate;
-using Xunit;
 using static Xunit.Assert;
 #endregion
 
-namespace ANX.Common.Validation.ApiTesting.Assert;
+namespace Anexia.Validation.ApiTesting.Assertion;
 
 public sealed class ReusableTriValidationAssertionTest
 {

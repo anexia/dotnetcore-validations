@@ -5,10 +5,10 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Api.CustomInterface;
+using Anexia.Validation.Api.CustomInterface;
 #endregion
 
-namespace ANX.Common.Validation.Api.Assert;
+namespace Anexia.Validation.Api.Assert;
 
 public sealed class ReusableAssertion<T> : IReusableAssertion<T>
 {

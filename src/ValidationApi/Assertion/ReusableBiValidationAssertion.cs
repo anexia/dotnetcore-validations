@@ -5,11 +5,11 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Api.CustomInterface;
-using ANX.Common.Validation.Api.Validate;
+using Anexia.Validation.Api.CustomInterface;
+using Anexia.Validation.Api.Validate;
 #endregion
 
-namespace ANX.Common.Validation.Api.Assert;
+namespace Anexia.Validation.Api.Assert;
 
 public sealed class ReusableBiValidationAssertion<TFirst, TSecond> : IReusableBiAssertion<TFirst, TSecond>
 {
@@ -21,8 +21,8 @@ public sealed class ReusableBiValidationAssertion<TFirst, TSecond> : IReusableBi
         ExceptionSupplier = exceptionSupplier;
     }
 
-    private IReusableBiValidation<TFirst, TSecond> Validation { get; }
-    private Func<TFirst, TSecond, Exception> ExceptionSupplier { get; }
+    private readonly IReusableBiValidation<TFirst, TSecond> Validation;
+    private readonly Func<TFirst, TSecond, Exception> ExceptionSupplier;
 
     public void Assert(TFirst first, TSecond second)
     {

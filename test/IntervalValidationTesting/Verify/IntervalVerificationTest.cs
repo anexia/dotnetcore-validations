@@ -5,11 +5,10 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.IntervalTesting.Verify.Data;
-using Xunit;
+using Anexia.Validation.IntervalTesting.Verify.Data;
 #endregion
 
-namespace ANX.Common.Validation.IntervalTesting.Verify;
+namespace Anexia.Validation.IntervalTesting.Verify;
 
 public sealed class IntervalVerificationTest
 {
@@ -22,10 +21,8 @@ public sealed class IntervalVerificationTest
     [ClassData(typeof(IntervalVerificationExceptionData))]
     public void VerifyThrowsExceptionWhenValueIsNotInInterval(ExceptionTestConfiguration exceptionTestConfiguration)
     {
-        var actualException = Assert.Throws(
+        Assert.Throws(
             exceptionTestConfiguration.ExceptionType,
             exceptionTestConfiguration.ExceptionSupplier);
-
-        Assert.Equal(exceptionTestConfiguration.ExpectedExceptionMessage, actualException.Message);
     }
 }

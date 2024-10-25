@@ -6,10 +6,10 @@
 
 #region
 using System.Runtime.Serialization;
-using ANX.Common.Validation.Interval.Common;
+using Anexia.Validation.Interval.Common;
 #endregion
 
-namespace ANX.Common.Validation.Interval.Exception;
+namespace Anexia.Validation.Interval.Exception;
 
 [Serializable]
 public sealed class ValueOutOfIntervalException<T> : System.Exception

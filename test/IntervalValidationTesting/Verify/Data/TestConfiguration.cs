@@ -5,13 +5,14 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Interval.Verify;
+using Anexia.Validation.Interval.Verify;
 #endregion
 
-namespace ANX.Common.Validation.IntervalTesting.Verify.Data;
+namespace Anexia.Validation.IntervalTesting.Verify.Data;
 
 public sealed class TestConfiguration
 {
+    private readonly IntervalVerification<int> IntervalVerification;
     private TestConfiguration(IntervalVerification<int> intervalVerification, int expectedValue)
     {
         ExpectedValue = expectedValue;
@@ -19,7 +20,6 @@ public sealed class TestConfiguration
     }
 
     public int ExpectedValue { get; }
-    private IntervalVerification<int> IntervalVerification { get; }
     public int ActualValue => IntervalVerification.Verify(ExpectedValue);
 
     public static TestConfiguration Create(IntervalVerification<int> intervalVerification, int value) =>

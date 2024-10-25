@@ -5,14 +5,13 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Interval.Common;
-using ANX.Common.Validation.Interval.Exception;
-using ANX.Common.Validation.Interval.Verify;
-using Xunit;
+using Anexia.Validation.Interval.Common;
+using Anexia.Validation.Interval.Exception;
+using Anexia.Validation.Interval.Verify;
 using static Xunit.Assert;
 #endregion
 
-namespace ANX.Common.Validation.IntervalTesting.Verify;
+namespace Anexia.Validation.IntervalTesting.Verify;
 
 public sealed class ClosedIntervalVerificationTest
 {

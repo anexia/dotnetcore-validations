@@ -5,12 +5,11 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Interval.Closed;
-using Xunit;
+using Anexia.Validation.Interval.Closed;
 using static Xunit.Assert;
 #endregion
 
-namespace ANX.Common.Validation.IntervalTesting.Closed;
+namespace Anexia.Validation.IntervalTesting.Closed;
 
 public sealed class LeftOpenRightClosedIntervalTest
 {

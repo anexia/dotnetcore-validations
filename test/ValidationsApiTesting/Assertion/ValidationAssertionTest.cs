@@ -6,12 +6,9 @@
 
 #region
 using System;
-using ANX.Common.Validation.Api.Assert;
-using ANX.Common.Validation.Api.Validate;
-using Xunit;
 #endregion
 
-namespace ANX.Common.Validation.ApiTesting.Assert;
+namespace Anexia.Validation.ApiTesting.Assertion;
 
 public sealed class ValidationAssertionTest
 {
@@ -28,7 +25,7 @@ public sealed class ValidationAssertionTest
             new PositiveUintValidation(0),
             () => throw new ArgumentException("Value is not positive"));
 
-        _ = Xunit.Assert.Throws<ArgumentException>(() => assertion.Assert());
+        _ = Assert.Throws<ArgumentException>(() => assertion.Assert());
     }
 
     [Fact]
@@ -39,7 +36,7 @@ public sealed class ValidationAssertionTest
 
     [Fact]
     public void StaticAssertThrowsExceptionForBooleanSupplierReturningFalse() =>
-        Xunit.Assert.Throws<ArgumentException>(
+        Assert.Throws<ArgumentException>(
             () => ValidationAssertion.Assert(
                 new PositiveUintValidation(0),
                 () => throw new ArgumentException("Value is not positive")));
@@ -51,7 +48,7 @@ internal sealed class PositiveUintValidation : IValidation
         Value = value;
     }
 
-    private uint Value { get; }
+    private readonly uint Value;
 
     public bool IsValid() => Value > 0;
 }

@@ -5,10 +5,10 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Api.CustomInterface;
+using Anexia.Validation.Api.CustomInterface;
 #endregion
 
-namespace ANX.Common.Validation.Api.Assert;
+namespace Anexia.Validation.Api.Assert;
 
 public sealed class ReusableTriAssertion<TFirst, TSecond, TThird> : IReusableTriAssertion<TFirst, TSecond, TThird>
 {
@@ -20,8 +20,8 @@ public sealed class ReusableTriAssertion<TFirst, TSecond, TThird> : IReusableTri
         ExceptionSupplier = exceptionSupplier;
     }
 
-    private Func<TFirst, TSecond, TThird, bool> Predicate { get; }
-    private Func<TFirst, TSecond, TThird, Exception> ExceptionSupplier { get; }
+    private readonly Func<TFirst, TSecond, TThird, bool> Predicate;
+    private readonly Func<TFirst, TSecond, TThird, Exception> ExceptionSupplier;
 
     public void Assert(TFirst first, TSecond second, TThird third)
     {

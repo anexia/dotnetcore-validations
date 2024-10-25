@@ -6,11 +6,11 @@
 
 #region
 using System.Threading.Tasks.Dataflow;
-using ANX.Common.Validation.Api.CustomInterface;
-using ANX.Common.Validation.Api.Extension;
+using Anexia.Validation.Api.CustomInterface;
+using Anexia.Validation.Api.Extension;
 #endregion
 
-namespace ANX.Common.Validation.Api.Assert.Parallel;
+namespace Anexia.Validation.Api.Assert.Parallel;
 
 public sealed class ParallelContinuousBiAssertion<T> : IAsyncReusableAssertion<T>
 {

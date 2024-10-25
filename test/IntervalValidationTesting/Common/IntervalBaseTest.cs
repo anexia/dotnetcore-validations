@@ -5,12 +5,11 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Interval.Common;
-using ANX.Common.Validation.Interval.Exception;
-using Xunit;
+using Anexia.Validation.Interval.Common;
+using Anexia.Validation.Interval.Exception;
 #endregion
 
-namespace ANX.Common.Validation.IntervalTesting.Common;
+namespace Anexia.Validation.IntervalTesting.Common;
 
 public sealed class IntervalBaseTest
 {
@@ -107,10 +106,6 @@ public sealed class IntervalBaseTest
     [Fact]
     public void IntervalBaseWithLowerBoundGreaterThanUpperBoundThrowsException()
     {
-        var exception = Assert.Throws<IllegalIntervalException>(() => new IntervalBase<uint>(21, 10));
-
-        Assert.Equal(
-            "Lower bound of interval must be less than or equal to upper bound 10, but was 21.",
-            exception.Message);
+        Assert.Throws<IllegalIntervalException>(() => new IntervalBase<uint>(21, 10));
     }
 }

@@ -5,12 +5,12 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Api.Verify;
-using ANX.Common.Validation.Interval.Common;
-using ANX.Common.Validation.Interval.Exception;
+using Anexia.Validation.Api.Verify;
+using Anexia.Validation.Interval.Common;
+using Anexia.Validation.Interval.Exception;
 #endregion
 
-namespace ANX.Common.Validation.Interval.Verify;
+namespace Anexia.Validation.Interval.Verify;
 
 public sealed class IntervalVerification<T> : IReusableVerification<T>
     where T : IComparable<T>

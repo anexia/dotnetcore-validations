@@ -5,12 +5,12 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Interval.Closed;
-using ANX.Common.Validation.Interval.Open;
-using ANX.Common.Validation.Interval.Verify;
+using Anexia.Validation.Interval.Closed;
+using Anexia.Validation.Interval.Open;
+using Anexia.Validation.Interval.Verify;
 #endregion
 
-namespace ANX.Common.Validation.Interval.Common;
+namespace Anexia.Validation.Interval.Common;
 
 public static class IntervalFactory
 {

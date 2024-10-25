@@ -5,11 +5,11 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Interval.Common;
+using Anexia.Validation.Interval.Common;
 using Equ;
 #endregion
 
-namespace ANX.Common.Validation.Interval.Open;
+namespace Anexia.Validation.Interval.Open;
 
 public sealed class OpenInterval<T> : MemberwiseEquatable<OpenInterval<T>>, IInterval<T>
     where T : IComparable<T>

@@ -5,10 +5,10 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Api.CustomInterface;
+using Anexia.Validation.Api.CustomInterface;
 #endregion
 
-namespace ANX.Common.Validation.Api.Assert;
+namespace Anexia.Validation.Api.Assert;
 
 public sealed class ReusableBiAssertion<TFirst, TSecond> : IReusableBiAssertion<TFirst, TSecond>
 {
@@ -20,8 +20,8 @@ public sealed class ReusableBiAssertion<TFirst, TSecond> : IReusableBiAssertion<
         ExceptionSupplier = exceptionSupplier;
     }
 
-    private Func<TFirst, TSecond, bool> Predicate { get; }
-    private Func<TFirst, TSecond, Exception> ExceptionSupplier { get; }
+    private readonly Func<TFirst, TSecond, bool> Predicate;
+    private readonly Func<TFirst, TSecond, Exception> ExceptionSupplier;
 
     public void Assert(TFirst first, TSecond second)
     {

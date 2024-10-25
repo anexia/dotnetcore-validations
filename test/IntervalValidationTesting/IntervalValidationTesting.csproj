@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <AssemblyName>ANX.Common.Validation.IntervalTesting</AssemblyName>
-        <RootNamespace>ANX.Common.Validation.IntervalTesting</RootNamespace>
+        <AssemblyName>Anexia.Validation.IntervalTesting</AssemblyName>
+        <RootNamespace>Anexia.Validation.IntervalTesting</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

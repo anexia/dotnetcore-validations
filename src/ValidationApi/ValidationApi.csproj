@@ -3,8 +3,8 @@
     <PropertyGroup>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <AssemblyName>ANX.Common.Validation.Api</AssemblyName>
-        <RootNamespace>ANX.Common.Validation.Api</RootNamespace>
+        <AssemblyName>Anexia.Validation.Api</AssemblyName>
+        <RootNamespace>Anexia.Validation.Api</RootNamespace>
     </PropertyGroup>
 
 </Project>

@@ -4,7 +4,7 @@
 //  </copyright>
 // ------------------------------------------------------------------------------------------
 
-namespace ANX.Common.Validation.Api.Validate;
+namespace Anexia.Validation.Api.Validate;
 
 public interface IReusableBiValidation<in TFirst, in TSecond>
 {

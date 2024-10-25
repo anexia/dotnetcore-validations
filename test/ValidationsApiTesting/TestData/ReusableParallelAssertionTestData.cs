@@ -7,10 +7,9 @@
 #region
 using System;
 using System.Collections.Generic;
-using Xunit;
 #endregion
 
-namespace ANX.Common.Validation.ApiTesting.TestData;
+namespace Anexia.Validation.ApiTesting.TestData;
 
 public static class ParallelAssertionTestData
 {

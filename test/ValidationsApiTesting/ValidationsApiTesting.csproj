@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <AssemblyName>ANX.Common.Validation.ApiTesting</AssemblyName>
-        <RootNamespace>ANX.Common.Validation.ApiTesting</RootNamespace>
+        <AssemblyName>Anexia.Validation.ApiTesting</AssemblyName>
+        <RootNamespace>Anexia.Validation.ApiTesting</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

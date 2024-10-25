@@ -7,12 +7,11 @@
 #region
 using System;
 using System.Threading.Tasks;
-using ANX.Common.Validation.Api.Assert.Parallel;
-using ANX.Common.Validation.ApiTesting.TestData;
-using Xunit;
+using Anexia.Validation.Api.Assert.Parallel;
+using Anexia.Validation.ApiTesting.TestData;
 #endregion
 
-namespace ANX.Common.Validation.ApiTesting.Assert.Parallel;
+namespace Anexia.Validation.ApiTesting.Assertion.Parallel;
 
 public sealed class ParallelContinuousBiAssertionTest
 {
@@ -26,7 +25,7 @@ public sealed class ParallelContinuousBiAssertionTest
         MemberType = typeof(ParallelBiAssertionTestData))]
     public async Task ThrowsException(int[] integerList)
     {
-        await Xunit.Assert.ThrowsAsync<AggregateException>(async () => await _assertion.AssertAsync(integerList));
+        await Assert.ThrowsAsync<AggregateException>(async () => await _assertion.AssertAsync(integerList));
     }
 
     [Theory]

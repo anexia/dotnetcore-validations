@@ -5,12 +5,11 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Interval.Open;
-using Xunit;
+using Anexia.Validation.Interval.Open;
 using static Xunit.Assert;
 #endregion
 
-namespace ANX.Common.Validation.IntervalTesting.Open;
+namespace Anexia.Validation.IntervalTesting.Open;
 
 public sealed class OpenIntervalTest
 {

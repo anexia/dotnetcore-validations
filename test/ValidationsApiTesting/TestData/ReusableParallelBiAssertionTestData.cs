@@ -6,10 +6,9 @@
 
 #region
 using System;
-using Xunit;
 #endregion
 
-namespace ANX.Common.Validation.ApiTesting.TestData;
+namespace Anexia.Validation.ApiTesting.TestData;
 
 public static class ParallelBiAssertionTestData
 {
@@ -18,14 +17,14 @@ public static class ParallelBiAssertionTestData
         var value = new int[10000];
         var random = new Random();
 
-        for(var i = 0; i < 10000 - 2; i++)
+        for(var i = 0; i < value.Length - 2; i++)
         {
             value[i] = random.Next();
         }
 
         //just making the test odds free
-        value[10000 - 2] = 10;
-        value[10000 - 1] = 9;
+        value[^2] = 10;
+        value[^1] = 9;
 
         return new TheoryData<int[]>
         {

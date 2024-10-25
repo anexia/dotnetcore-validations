@@ -5,12 +5,12 @@
 // ------------------------------------------------------------------------------------------
 
 #region
-using ANX.Common.Validation.Api.Assert;
-using ANX.Common.Validation.Interval.Exception;
+using Anexia.Validation.Api.Assert;
+using Anexia.Validation.Interval.Exception;
 using Equ;
 #endregion
 
-namespace ANX.Common.Validation.Interval.Common;
+namespace Anexia.Validation.Interval.Common;
 
 public sealed class IntervalBase<T> : MemberwiseEquatable<IntervalBase<T>>
     where T : IComparable<T>

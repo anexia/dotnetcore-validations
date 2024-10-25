@@ -8,7 +8,7 @@
 using System.Runtime.Serialization;
 #endregion
 
-namespace ANX.Common.Validation.Interval.Exception;
+namespace Anexia.Validation.Interval.Exception;
 
 [Serializable]
 public sealed class IllegalIntervalException : System.Exception

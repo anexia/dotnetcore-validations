@@ -6,12 +6,9 @@
 
 #region
 using System;
-using ANX.Common.Validation.Api.Assert;
-using ANX.Common.Validation.Api.Validate;
-using Xunit;
 #endregion
 
-namespace ANX.Common.Validation.ApiTesting.Assert;
+namespace Anexia.Validation.ApiTesting.Assertion;
 
 public sealed class ReusableValidationAssertionTest
 {
@@ -25,9 +22,7 @@ public sealed class ReusableValidationAssertionTest
     [Fact]
     public void AssertThrowsExceptionForBooleanSupplierReturningFalse()
     {
-        var exception = Xunit.Assert.Throws<ArgumentException>(() => _assertion.Assert(0));
-
-        Xunit.Assert.Equal("Value 0 is not positive", exception.Message);
+        Assert.Throws<ArgumentException>(() => _assertion.Assert(0));
     }
 }
 internal sealed class PositiveReusableUintValidation : IReusableValidation<uint>

@@ -4,7 +4,7 @@
 //  </copyright>
 // ------------------------------------------------------------------------------------------
 
-namespace ANX.Common.Validation.Api.Verify;
+namespace Anexia.Validation.Api.Verify;
 
 public interface IReusableVerification<T>
 {
